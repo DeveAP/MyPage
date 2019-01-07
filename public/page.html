@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andres Apostol</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header-style">
+        <img src="" alt="">
+        <ul class="menu">
+            <li class="atributos">Descripción</li>
+            <li class="atributos">Habilidades</li>
+            <li class="atributos">Proyectos</li>
+            <li class="atributos">Contacto</li>
+        </ul>
+    </header>
+    <div class="body-style">
+        <section class="section-style">
+                <article class="portal">
+                    
+                </article>
+                <article class="description"></article>
+                <article class="skills"></article>
+                <article class="proyects"></article>
+            </section>
+            <footer class="footer-style">
+        
+            </footer>
+    </div>
+    <script>
+        const menu = document.getElementsByClassName('header-style');
+        window.onscroll = () => {
+            if (window.scrollY > 0) {
+                menu[0].classList = "header-style active-menu";
+            }
+            else{
+                menu[0].classList = "header-style";
+            }
+        };
+    </script>
+</body>
+</html>

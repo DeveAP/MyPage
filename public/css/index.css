@@ -1,0 +1,59 @@
+/* settings basic format */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body Grid Tablet */
+.body-style{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 337vh;
+    display: grid;
+    grid-template-rows: 92% 8%;
+}
+.header-style{
+    display: grid;
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    grid-template-columns: 5% 95%;
+    align-items: center; 
+    justify-items: center;
+    top: -60px;
+    background-color: aqua;
+}
+.header-style.active-menu{
+    top:0px;
+}
+
+.header-style .menu{
+    margin-right: 165px;
+}
+.header-style .menu .atributos{
+    display: inline;
+    margin-right: 20px;
+}
+.section-style{
+    background-color: royalblue;
+}
+.portal{
+    background-color: brown;
+    height: 100vh;
+}
+.description{
+    height: 50vh;
+    background-color: blanchedalmond;
+}
+.skills{
+    height: 80vh;
+    background-color: crimson;
+}
+.proyects{
+    height: 80vh;
+    background-color: rgba(66, 240, 109, 0.65);
+}
+.footer-style{
+    background-color: rebeccapurple;
+}
