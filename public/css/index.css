@@ -24,24 +24,35 @@
     top: -60px;
     background-color: aqua;
 }
-.header-style.active-menu{
-    top:0px;
-}
+    .header-style.active-menu{
+        top:0px;
+    }
 
-.header-style .menu{
-    margin-right: 165px;
-}
-.header-style .menu .atributos{
-    display: inline;
-    margin-right: 20px;
-}
+    .header-style .menu{
+        margin-right: 1%;
+    }
+    .header-style .menu .atributos{
+        display: inline;
+        margin-right: 20px;
+    }
 .section-style{
     background-color: royalblue;
 }
 .portal{
     background-color: brown;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
+    .portal .portal-text{
+        background-color: rgb(218, 60, 60);
+        font-size: 4em;
+    }
+    .portal .portal-text p{
+        display: inline;
+        font-size: .7em;
+        margin-left: 15%;
+    }
 .description{
     height: 50vh;
     background-color: blanchedalmond;
