@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 337vh;
+    height: 347vh;
     display: grid;
     grid-template-rows: 92% 8%;
 }
@@ -54,17 +54,58 @@
         margin-left: 15%;
     }
 .description{
-    height: 50vh;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: blanchedalmond;
 }
+    .description .description-content{
+        width: 80%;
+        height: 67%;
+        background-color: rgb(230, 180, 107);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+        justify-items: center;
+    }
+    .description .description-content .images-perfil{
+        height: 70%;
+        width: 90%;
+        background-color: darkgoldenrod;
+        border-radius: 50%;
+        margin-left: 36%;
+    }
+    .description .description-content .texto-perfil{
+        width: 80%;
+        height: 60%;
+        background-color: darkslateblue;
+    }
 .skills{
     height: 80vh;
     background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+    .skills .skills-content{
+        width: 70%;
+        height: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4,25%)
+    }
+    .skills .skills-content .etiquetas{
+        background-color: gold;
+    }
 .proyects{
     height: 80vh;
     background-color: rgba(66, 240, 109, 0.65);
 }
 .footer-style{
     background-color: rebeccapurple;
+}
+@media screen and (max-width:320px){ 
+
 }
