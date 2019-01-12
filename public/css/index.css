@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 347vh;
+    height: 353vh;
     display: grid;
     grid-template-rows: 92% 8%;
 }
@@ -83,17 +83,16 @@
         background-color: darkslateblue;
     }
 .skills{
-    height: 80vh;
+    height: 85vh;
     background-color: crimson;
     display: flex;
     justify-content: center;
     align-items: center;
 }
     .skills .skills-content{
-        width: 70%;
-        height: 80%;
+        width: 81%;
+        height: 92%;
         display: grid;
-        grid-gap: 10px;
         grid-template-columns: repeat(4,25%)
     }
     .skills .skills-content .etiquetas{
@@ -102,6 +101,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 11%;
+
     }
         .skills .skills-content .etiquetas .decora{
             height: 30px;
@@ -134,10 +135,69 @@
 .proyects{
     height: 80vh;
     background-color: rgba(66, 240, 109, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+    .proyects .content{
+        height: 80%;
+        width: 90%;
+        display: grid;
+        grid-template-rows: 10% 90%;
+        background-color: blueviolet;
+        border: 4px solid salmon;
+    }
+    .proyects .content .filtros-etiquetas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        .proyects .content .filtros-etiquetas .fil-etiqueta{
+            list-style: none;
+            margin-left: 5%;
+        }
+        #JS{
+            background-color: rgb(236, 173, 0);
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #PY{
+            background-color: rgb(242, 255, 55);
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #PHOTO{
+            background-color: rgb(0, 0, 180);
+            padding: 5px;
+            border-radius: 10px;
+        }
+    .proyects .content .content-projects{
+        width: 100%;
+        border-top: solid 5px khaki;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,50%);
+        overflow: auto;
+    }
+        .proyects .content .content-projects .image-project{
+            background-color: darkcyan;
+            height: 165px;
+            width: 100%;
+        }
+        .image-project.javascript{
+            background-color: cornflowerblue !important;
+        }
+        .image-project.python{
+            background-color: rgb(242, 255, 55) !important;
+        }
+        .image-project.photoshop{
+            background-color: darkblue !important;
+        }
+        .image-project
 .footer-style{
     background-color: rebeccapurple;
 }
 @media screen and (max-width:320px){ 
-
+    .proyects .content .content-projects{
+        grid-template-columns: 100%;
+    }
 }

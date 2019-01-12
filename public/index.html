@@ -62,22 +62,29 @@
                         </div>   
                     </div>
                 </article>
-                <article class="proyects"></article>
+                <article class="proyects">
+                    <div class="content">
+                        <ul class="filtros-etiquetas">
+                            <li class="fil-etiqueta" id="JS">JavaScript</li>
+                            <li class="fil-etiqueta" id="PY">Python</li>
+                            <li class="fil-etiqueta" id="PHOTO">Photoshop</li>
+                            <li class="fil-etiqueta">Todo</li>
+                        </ul>
+                        <div class="content-projects">
+                            <div class="image-project javascript"></div>
+                            <div class="image-project python"></div>
+                            <div class="image-project photoshop"></div>
+                            <div class="image-project"></div>
+                            <div class="image-project"></div>
+
+                        </div>
+                    </div>
+                </article>
             </section>
             <footer class="footer-style">
         
             </footer>
     </div>
-    <script>
-        const menu = document.getElementsByClassName('header-style');
-        window.onscroll = () => {
-            if (window.scrollY > 0) {
-                menu[0].classList = "header-style active-menu";
-            }
-            else{
-                menu[0].classList = "header-style";
-            }
-        };
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
