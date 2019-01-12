@@ -16,6 +16,7 @@
 .header-style{
     display: grid;
     position: fixed;
+    z-index: 1;
     height: 60px;
     width: 100vw;
     grid-template-columns: 5% 95%;
@@ -192,10 +193,47 @@
         .image-project.photoshop{
             background-color: darkblue !important;
         }
-        .image-project
+        
 .footer-style{
     background-color: rebeccapurple;
+    height: 64vh;
 }
+    .footer-style .footer-title{
+        margin-bottom: 4%;
+        text-align: center;
+
+    }
+    .footer-style .footer-form{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    .footer-style input{
+        border-radius: 5px;
+        line-height: initial;
+        border-style: solid;
+        border: 1px solid transparent;
+        margin-bottom: 16px;
+        font-size: 14px;
+        padding: 5px;
+    }
+        .footer-style .footer-form .left{
+            display: inherit;
+            padding: 0 40px;
+        }
+        .footer-style .footer-form .right{
+            display: inherit;
+            padding: 0 40px;
+        }
+        .footer-style .footer-form .center{
+            grid-column: 1/-1;
+            display: inherit;
+            padding: 0 40px;
+        }
+        .footer-style .footer-form .button-submit{
+            
+        }
+        
 @media screen and (max-width:320px){ 
     .proyects .content .content-projects{
         grid-template-columns: 100%;
