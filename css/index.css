@@ -53,6 +53,9 @@
         display: inline;
         font-size: .7em;
         margin-left: 15%;
+        background-color: forestgreen;
+        padding: 5px;
+        border-radius: 10px;
     }
 .description{
     height: 60vh;
@@ -206,7 +209,9 @@
     .footer-style .footer-form{
         grid-column: 1/-1;
         display: grid;
+        width: 90%;
         grid-template-columns: repeat(2,50%);
+        margin: 0 auto;
     }
     .footer-style input{
         border-radius: 5px;
@@ -231,11 +236,64 @@
             padding: 0 40px;
         }
         .footer-style .footer-form .button-submit{
-            
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            justify-self: end;
+            margin-top: 10px;
         }
         
-@media screen and (max-width:320px){ 
+@media screen and (max-width:426px){ 
+    .body-style{
+        height: 451vh;
+    }
+    .portal .portal-text{
+        font-size: 2em;
+    }
+
+    .description{
+        height: 135vh;
+    }
+        .description .description-content{
+            grid-template-columns: 100%;
+            grid-template-rows: 30% 70%;
+        }
+        .description .description-content .texto-perfil{
+            height: 95%;
+            border-radius: 10px;
+        }
+        .description .description-content .images-perfil{
+            margin-left: 0px;
+            height: 180px;
+            width: 180px; 
+        }
+
+    .skills{
+        height: 100vh;
+        overflow: auto;
+    }
+        .skills .skills-content{
+        grid-template-columns: repeat(4,100%);
+        justify-items: center;
+        }
+        .skills .skills-content .etiquetas{
+            margin-top: 30px;
+            width: 80%;
+        }
+        .skills .skills-content .etiquetas:nth-child(1){
+            margin-left: 0px;
+        }
+        .skills .skills-content .etiquetas:nth-child(4){
+        }
     .proyects .content .content-projects{
         grid-template-columns: 100%;
     }
+
+    .footer-style{
+        height: 75vh;
+    }
+        .footer-style .footer-form{
+            grid-template-columns: 100%;
+            width: 100%;
+        }
 }
