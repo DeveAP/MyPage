@@ -31,7 +31,7 @@
 }
     .header-style.active-menu{
         top:0px;
-        
+
     }
 
     .header-style .menu{
@@ -73,17 +73,17 @@
         color:#EEF1F5;
     }
 .description{
-    height: 60vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blanchedalmond;
+    background-color: #F4F4E6;
 }
     .description .description-content{
         width: 80%;
         height: 67%;
-        background-color: rgb(230, 180, 107);
-        border-radius: 10px;
+        background-image:url(../Imagenes/Fondo1.png);
+        border-radius: 5px ;
         display: grid;
         grid-template-columns: 20% 80%;
         align-items: center;
@@ -92,14 +92,18 @@
     .description .description-content .images-perfil{
         height: 70%;
         width: 90%;
-        background-color: darkgoldenrod;
+       /* background-color: #F4F4E6;*/
+       background-image:url("../Imagenes/FotoPerfil.jpg");
+       background-size:100%;
         border-radius: 50%;
+        border:solid 2px;
         margin-left: 36%;
     }
     .description .description-content .texto-perfil{
         width: 80%;
         height: 60%;
-        background-color: darkslateblue;
+        background-color:#F4F4E6;
+        border-radius:5px;
     }
 .skills{
     height: 85vh;
