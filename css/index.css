@@ -23,14 +23,20 @@
     align-items: center; 
     justify-items: center;
     top: -60px;
-    background-color: aqua;
+    background-color:#EEF1F5;
+    font-family: monospace;
+
+
+
 }
     .header-style.active-menu{
         top:0px;
+        
     }
 
     .header-style .menu{
         margin-right: 1%;
+
     }
     .header-style .menu .atributos{
         display: inline;
@@ -54,14 +60,17 @@
         font-size: 4em;
         font-family: monospace;
         margin-left:5%;
+        padding:2%;
+        border-radius:5px;
     }
     .portal .portal-text p{
         display: inline;
         font-size: .7em;
         margin-left: 15%;
-        background-color: forestgreen;
+        background-color: #23272A;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 5px;
+        color:#EEF1F5;
     }
 .description{
     height: 60vh;
