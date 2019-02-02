@@ -37,17 +37,23 @@
         margin-right: 20px;
     }
 .section-style{
-    background-color: royalblue;
+    background-color:transparent;
 }
 .portal{
-    background-color: brown;
+    /*background-color: #61ADFE;*/
+    background-image:url("../Imagenes/Codigo.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%; 
     height: 100vh;
     display: flex;
     align-items: center;
+
 }
     .portal .portal-text{
-        background-color: rgb(218, 60, 60);
+        background-color: #F1F5F9;
         font-size: 4em;
+        font-family: monospace;
+        margin-left:5%;
     }
     .portal .portal-text p{
         display: inline;
