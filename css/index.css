@@ -236,8 +236,13 @@
         }
         
 .footer-style{
-    background-color: rebeccapurple;
-    height: 64vh;
+    background-image:url(../Imagenes/Contactame.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    font-family:monospace;
+    height: 250%;
+    color:white;
+    font-size:15px;
 }
     .footer-style .footer-title{
         margin-bottom: 4%;
@@ -279,6 +284,8 @@
             justify-content: center;
             justify-self: end;
             margin-top: 10px;
+            border-radius:5px;
+            height:100%;
         }
         
 @media screen and (max-width:426px){ 
