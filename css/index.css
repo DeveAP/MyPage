@@ -31,9 +31,14 @@
 }
     .header-style.active-menu{
         top:0px;
+        font-weight:bold;
 
     }
-
+    .header-style .menu .atributos a{
+        text-decoration: none;
+        color: black;
+        font-weight:bold;
+    }
     .header-style .menu{
         margin-right: 1%;
 
@@ -159,7 +164,7 @@
         } 
 .proyects{
     height: 80vh;
-    background-color: rgba(66, 240, 109, 0.65);
+    background-color:#F4F4E6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,8 +174,10 @@
         width: 90%;
         display: grid;
         grid-template-rows: 10% 90%;
-        background-color: blueviolet;
-        border: 4px solid salmon;
+        background-color:#F4F4E6;
+        border: 4px solid #2DB2F5;
+        border-radius:5px;
+        padding-top:5px;
     }
     .proyects .content .filtros-etiquetas{
         display: flex;
@@ -182,29 +189,39 @@
             margin-left: 5%;
         }
         #JS{
-            background-color: rgb(236, 173, 0);
+            background-color: #2DB2F5  ;
             padding: 5px;
-            border-radius: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         #PY{
             background-color: rgb(242, 255, 55);
             padding: 5px;
-            border-radius: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         #PHOTO{
             background-color: rgb(0, 0, 180);
             padding: 5px;
-            border-radius: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #TODO{
+            background-color:#A0AE95;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     .proyects .content .content-projects{
         width: 100%;
-        border-top: solid 5px khaki;
+        border-top: solid 5px black;
+        margin-top: 5px;
         display: grid;
         grid-template-columns: repeat(auto-fill,50%);
         overflow: auto;
     }
         .proyects .content .content-projects .image-project{
-            background-color: darkcyan;
+            background-color:white;
             height: 165px;
             width: 100%;
         }
