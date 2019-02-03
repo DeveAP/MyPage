@@ -309,8 +309,7 @@
 
     .skills{
         height: 100vh;
-        overflow: hidden;
-        /* overflow: auto; */
+        overflow: auto;
     }
         .skills .skills-content{
         grid-template-columns: repeat(5,100%);
