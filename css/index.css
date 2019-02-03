@@ -236,57 +236,51 @@
         }
         
 .footer-style{
-    background-image:url(../Imagenes/Contactame.jpg);
+    background-color:#3D3D3D;
     background-repeat: no-repeat;
-    background-size:100% 100%;
     font-family:monospace;
-    height: 250%;
+    height: 100%;
     color:white;
-    font-size:15px;
+    
 }
     .footer-style .footer-title{
-        margin-bottom: 4%;
-        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 3%;
+        text-align:left;
+        margin-left:5%;
 
     }
-    .footer-style .footer-form{
-        grid-column: 1/-1;
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(2,50%);
-        margin: 0 auto;
+
+        .footer-style .footer-correo .Correo{
+        text-decoration:none;
+        font-family:monospace;
+        color:white;
+        margin-left:5%;
+
     }
-    .footer-style input{
-        border-radius: 5px;
-        line-height: initial;
-        border-style: solid;
-        border: 1px solid transparent;
-        margin-bottom: 16px;
-        font-size: 14px;
-        padding: 5px;
+    .footer-style .Titulo-Redes{
+
+        margin-left:5%;
+        font-family:monospace;
+        margin-top:5px;
     }
-        .footer-style .footer-form .left{
-            display: inherit;
-            padding: 0 40px;
-        }
-        .footer-style .footer-form .right{
-            display: inherit;
-            padding: 0 40px;
-        }
-        .footer-style .footer-form .center{
-            grid-column: 1/-1;
-            display: inherit;
-            padding: 0 40px;
-        }
-        .footer-style .footer-form .button-submit{
-            width: 10%;
-            display: flex;
-            justify-content: center;
-            justify-self: end;
-            margin-top: 10px;
-            border-radius:5px;
-            height:100%;
-        }
+
+    .Container-Redes{
+        margin-top:2%;
+        margin-left:4%;
+    }
+
+    .Container-Redes .Redes{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: inherit;
+        margin-left:7px;
+
+
+    }
+
         
 @media screen and (max-width:426px){ 
     .body-style{
