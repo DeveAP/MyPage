@@ -310,7 +310,11 @@
 
 }
         
+<<<<<<< HEAD
 @media screen and (max-width:425px){ 
+=======
+@media screen and (max-width:500px){ 
+>>>>>>> bdf92f27f78f62f7e65e4de18e09ffb9edaae9ad
     .body-style{
         height: 451vh;
     }
