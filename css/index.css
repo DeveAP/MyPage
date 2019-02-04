@@ -312,7 +312,6 @@
 
     .skills{
         height: 100vh;
-        overflow: hidden;
         overflow: auto;
     }
         .skills .skills-content{
