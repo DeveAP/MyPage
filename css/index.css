@@ -312,29 +312,20 @@
         overflow: auto;
     }
         .skills .skills-content{
-        grid-template-columns: repeat(4,100%);
+        grid-template-columns: repeat(5,100%);
         /*display: list-item flow-root;
         justify-content:inherit;*/
         }
         .skills .skills-content .etiquetas{
             margin-top: 30px;
-            width: 80%;
+            margin-left: 25px;            width: 80%;
         }
-        .skills .skills-content .etiquetas:nth-child(1){
-            margin-left: 25px;
+        .skills .skills-content .etiquetas:nth-child(5){
+            opacity: 0;
+            width: 8%;
+            margin-left: 10px;
         }
-        .skills .skills-content .etiquetas:nth-child(2){
-            margin-left: 25px;
-        }
-        .skills .skills-content .etiquetas:nth-child(3){
-            margin-left: 25px;
-        }
-        .skills .skills-content .etiquetas:nth-child(4){
-            margin-left:25px;
-        }
-        .skills {
-            padding-right:100px;
-        }
+        
 
     .proyects .content .content-projects{
         grid-template-columns: 100%;
