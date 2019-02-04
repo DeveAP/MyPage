@@ -286,13 +286,80 @@
 
     }
 
-        
-@media screen and (max-width:500px){ 
+@media screen and (max-width: 780px){
+
+    .description .description-content .images-perfil{
+        height: 50%;
+        background-size:100% 100%;
+
+    }
+
+    .skills .skills-content{
+
+    width:95%;
+    
+    }
+
+    .skills .skills-content .etiquetas:nth-child(1){
+        margin-left: 0px;
+    }
+
+    .portal .portal-text{
+        width:50%;
+        height:30%;
+        font-size: 3em;
+    }
+
+}
+   
+@media screen and (max-width: 750px){
+    .portal .portal-text{
+        width:50%;
+        height:30%;
+        font-size: 2.9em;
+    }
+}  
+@media screen and (max-width: 670px){
+    .portal .portal-text{
+
+        font-size: 2.61em;
+    }
+}   
+@media screen and (max-width: 610px){
+    .portal .portal-text{
+
+        font-size: 2.5em;
+    }
+}  
+@media screen and (max-width: 590px){
+    .portal .portal-text{
+
+        font-size: 2.3em;
+        height:30%;
+    }
+} 
+@media screen and (max-width: 503px){
+    .portal .portal-text{
+
+        font-size: 2.1em;
+        height:30%;
+    }
+} 
+@media screen and (max-width: 465px){
+    .portal .portal-text{
+
+        font-size: 1.9em;
+        height:30%;
+    }
+} 
+
+@media screen and (max-width:425px){ 
+
     .body-style{
         height: 451vh;
     }
     .portal .portal-text{
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .description{
@@ -307,6 +374,7 @@
             border-radius: 10px;
         }
         .description .description-content .images-perfil{
+            margin-top:50px;
             margin-left: 0px;
             height: 150px;
             width: 150px; 
@@ -326,6 +394,9 @@
             margin-left: 25px;            
             width: 80%;
         }
+            .skills .skills-content .etiquetas:nth-child(1){
+        margin-left: 11%;
+    }
         .skills .skills-content .etiquetas:nth-child(5){
             opacity: 0;
             width: 8%;
@@ -346,4 +417,12 @@
             grid-template-columns: 100%;
             width: 100%;
         }
+}
+
+@media screen and (max-width:404px){
+    .portal .portal-text{
+
+        font-size: 1.7em;
+        height:30%;
+    }
 }
