@@ -58,43 +58,6 @@ function all_fill(contents){
         contents[i].style.display = 'inherit';
     }
 }
-// skills
-const slide =document.getElementsByClassName('skills-content');
-let move = 0; // valor determinante de la pantalla 
-let num = 0; // valor de ubicacion del movimiento
-const acelerador = 8; // acelera
-let max = 0;
-let min = 0;
-// slide[0].addEventListener('touchstart',(e)=>{ // Evento que ubica la pantalla 
-//     move = e.changedTouches[0].clientX
-//     console.log(move)
-// }) 
-slide[0].addEventListener('touchmove',(e) => { // Evento que mueve los elementos
-    let moving = e.changedTouches[0].clientX
-    max = slide[0].children[0].scrollWidth * 3.3
-    if(move > moving){
-        console.log('izquierda')
-        if(num >= -max){
-            num -= acelerador;
-            slide[0].style.left = `${num}px`
-        }
-        else{
-            console.log('block')
-        }
-    }
-    else{
-        console.log('Derecha')
-        if (num <= min) {
-            num += acelerador;
-            slide[0].style.left = `${num}px`        
-        }
-        else{
-            console.log('block')
-        }
-    }
-    move = moving // declaracion del punto final del movimiento 
-    
-})
 
  
 
