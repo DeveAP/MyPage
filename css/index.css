@@ -134,6 +134,9 @@
         margin-left: 11%;
 
     }
+    .skills .skills-content .etiquetas:nth-child(5){
+        display: none;
+    }
         .skills .skills-content .etiquetas .decora{
             height: 30px;
             width: 30px;
@@ -310,7 +313,7 @@
     .skills{
         height: 100vh;
         overflow: hidden;
-        /* overflow: auto; */
+        overflow: auto;
     }
         .skills .skills-content{
         grid-template-columns: repeat(5,100%);
