@@ -409,7 +409,7 @@ a {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.body-style.main h1 {
+/* .body-style.main h1 {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 300;
@@ -417,7 +417,7 @@ a {
   margin: 2em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 .body-style.main.nav-is-visible {
   -webkit-transform: translateY(80px);
   -moz-transform: translateY(80px);
@@ -433,8 +433,8 @@ a {
     -o-transform: translateY(170px);
     transform: translateY(170px);
   }
-  .body-style.main h1 {
+  /* .body-style.main h1 {
     font-size: 3.6rem;
     margin: 4em auto;
-  }
+  } */
 }

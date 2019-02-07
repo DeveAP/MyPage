@@ -2,7 +2,7 @@
 //menu
 const menu = document.getElementsByClassName('header-style');
 window.onscroll = () => {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 200) {
         menu[0].classList = "header-style active-menu";
     }
     else{
