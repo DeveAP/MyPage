@@ -23,7 +23,7 @@ a {
 
 /* -------------------------------- 
 
-Main Components 
+.body-style.Main Components 
 
 -------------------------------- */
 .cd-header {
@@ -53,6 +53,11 @@ Main Components
   -ms-transform: translateY(80px);
   -o-transform: translateY(80px);
   transform: translateY(80px);
+}
+.cd-header.nav-is-visible.header-black{
+  width: 100%;
+  background-color: #3D3D3D;
+  padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
   .cd-header.nav-is-visible {
@@ -391,7 +396,7 @@ Main Components
   background-color: #77cd91;
 }
 
-main {
+.body-style.main {
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
@@ -404,7 +409,7 @@ main {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-main h1 {
+.body-style.main h1 {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 300;
@@ -413,7 +418,7 @@ main h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-main.nav-is-visible {
+.body-style.main.nav-is-visible {
   -webkit-transform: translateY(80px);
   -moz-transform: translateY(80px);
   -ms-transform: translateY(80px);
@@ -421,14 +426,14 @@ main.nav-is-visible {
   transform: translateY(80px);
 }
 @media only screen and (min-width: 768px) {
-  main.nav-is-visible {
+  .body-style.main.nav-is-visible {
     -webkit-transform: translateY(170px);
     -moz-transform: translateY(170px);
     -ms-transform: translateY(170px);
     -o-transform: translateY(170px);
     transform: translateY(170px);
   }
-  main h1 {
+  .body-style.main h1 {
     font-size: 3.6rem;
     margin: 4em auto;
   }

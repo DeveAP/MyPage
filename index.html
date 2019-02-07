@@ -6,149 +6,143 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andres Apostol</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/menu.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
 <body>
-    <!-- <header class="header-style">
-        <img src="" alt="">
-        <ul class="menu">
-            <li class="atributos" ><a href="#Descripción">Descripción</a></li>
-            <li class="atributos"> <a href="#skills">Habilidades</a></li>
-            <li class="atributos"><a href="#Proyectos">Proyectos</a></li>
-            <li class="atributos"><a href="#Contacto">Contacto</a></li>
-        </ul>
-    </header> -->
-    <header class="header-style">    
-        <header class="cd-header">
+    <!-- Cabecera con el menu incluido -->
+    <header class="header-style">      
+        <div class="cd-header">
             <a href="#0" class="cd-logo"><img src="imagenes/cd-logo.svg" alt="Logo"></a>
             <a href="#0" class="cd-3d-nav-trigger">
                 Menu
                 <span></span>
             </a>
-        </header> <!-- .cd-header -->
+        </div> 
+        <!-- Menu y atributos -->
+        <nav class="cd-3d-nav-container">
+            <ul class="cd-3d-nav">
+                <li class="cd-selected">
+                    <a href="#0">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#0">Perfil</a>
+                </li>
+
+                <li>
+                    <a href="#0">Habilidades</a>
+                </li>
+
+                <li>
+                    <a href="#0">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="#0">Blog</a>
+                </li>
+            </ul> 
+
+            <span class="cd-marker color-1"></span>	
+        </nav> 
     </header>
-    <nav class="cd-3d-nav-container">
-		<ul class="cd-3d-nav">
-			<li class="cd-selected">
-				<a href="#0">Dashboard</a>
-			</li>
-
-			<li>
-				<a href="#0">Projects</a>
-			</li>
-
-			<li>
-				<a href="#0">Images</a>
-			</li>
-
-			<li>
-				<a href="#0">Settings</a>
-			</li>
-
-			<li>
-				<a href="#0">New</a>
-			</li>
-		</ul> <!-- .cd-3d-nav -->
-
-		<span class="cd-marker color-1"></span>	
-    </nav> <!-- .cd-3d-nav-container -->
-    <main>
-        <div class="body-style">
-            <section class="section-style">
-                    <article  class="portal">
-                        <div class="portal-text">
-                            <h1>Andres Apostol</h1>
-                            <h3>Soy programador</h3>
-                            <p>CV</p>
-                            <p>Portafolio</p>
-                        </div>
-                    </article>
-                    <article id="Descripción" class="description">
-                        <div class="description-content">
-                            <div class="images-perfil"></div>
-                            <div class="texto-perfil"></div>
-                        </div>
-                    </article>
-                <!-- <div class="skills2.0">    -->
-                    <div class="skills" id="skills">
-                        <div class="skills-content">
-                            <div class="etiquetas">
-                                <div class="decora"></div>
-                                <div class="images-title"></div>
-                                <div class="slide"></div>
-                                <div class="content"></div>
-                            </div>
-                            <div class="etiquetas">
-                                <div class="decora"></div>
-                                <div class="images-title"></div>
-                                <div class="slide"></div>
-                                <div class="content"></div>
-                            </div>
-                            <div class="etiquetas">
-                                <div class="decora"></div>
-                                <div class="images-title"></div>
-                                <div class="slide"></div>
-                                <div class="content"></div>
-                            </div>
-                            <div class="etiquetas">
-                                <div class="decora"></div>
-                                <div class="images-title"></div>
-                                <div class="slide"></div>
-                                <div class="content"></div>
-                            </div>  
-                            <div class="etiquetas">
-                            
-                            </div>   
-                        </div>
+    <!-- Todo el contenido -->
+    <div class="body-style main"> 
+        <!-- Contenedor segmentado  -->
+        <section class="section-style"> 
+            <!-- Inicio -->
+            <article  class="portal">
+                <div class="portal-text">
+                    <h1>Andres Apostol</h1>
+                    <h3>Soy programador</h3>
+                    <p>CV</p>
+                    <p>Portafolio</p>
+                </div>
+            </article>
+            <!-- Perfil -->
+            <article id="Descripción" class="description">
+                <div class="description-content">
+                    <div class="images-perfil"></div>
+                    <div class="texto-perfil"></div>
+                </div>
+            </article>
+            <!-- Hablilidades -->
+            <div class="skills" id="skills">
+                <div class="skills-content">
+                    <div class="etiquetas">
+                        <div class="decora"></div>
+                        <div class="images-title"></div>
+                        <div class="slide"></div>
+                        <div class="content"></div>
                     </div>
-                <!-- </div>     -->
-                    <article id=Proyectos class="proyects">
-                        <div class="content">
-                            <ul class="filtros-etiquetas">
-                                <li class="fil-etiqueta" id="JS">JavaScript</li>
-                                <li class="fil-etiqueta" id="PY">Python</li>
-                                <li class="fil-etiqueta" id="PHOTO">Photoshop</li>
-                                <li class="fil-etiqueta" id="TODO">Todo</li>
-                            </ul>
-                            <div class="content-projects">
-                                <div class="image-project javascript"></div>
-                                <div class="image-project python"></div>
-                                <div class="image-project photoshop"></div>
-                                <div class="image-project"></div>
-                                <div class="image-project"></div>
-
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                <footer id="Contacto" class="footer-style">
-                    <div class="footer-title">
-                        <h2>Contactame</h2>
+                    <div class="etiquetas">
+                        <div class="decora"></div>
+                        <div class="images-title"></div>
+                        <div class="slide"></div>
+                        <div class="content"></div>
                     </div>
-                    <div class="footer-correo">
-                        <a class="Correo" href="mailto:aandresaapostol@gmail.com?subject=Consulta%20de%20Pagina">Toca aqui y enviame un correo</a>
+                    <div class="etiquetas">
+                        <div class="decora"></div>
+                        <div class="images-title"></div>
+                        <div class="slide"></div>
+                        <div class="content"></div>
                     </div>
-                        <div class="Titulo-Redes">
-                            <h2>Redes Sociales y Telefono</h2>
+                    <div class="etiquetas">
+                        <div class="decora"></div>
+                        <div class="images-title"></div>
+                        <div class="slide"></div>
+                        <div class="content"></div>
+                    </div>  
+                    <div class="etiquetas">
+                    
+                    </div>   
+                </div>
+            </div>
+            <!-- Proyectos realizados -->
+            <article id=Proyectos class="proyects">
+                <div class="content">
+                    <ul class="filtros-etiquetas">
+                        <li class="fil-etiqueta" id="JS">JavaScript</li>
+                        <li class="fil-etiqueta" id="PY">Python</li>
+                        <li class="fil-etiqueta" id="PHOTO">Photoshop</li>
+                        <li class="fil-etiqueta" id="TODO">Todo</li>
+                    </ul>
+                    <div class="content-projects">
+                        <div class="image-project javascript"></div>
+                        <div class="image-project python"></div>
+                        <div class="image-project photoshop"></div>
+                        <div class="image-project"></div>
+                        <div class="image-project"></div>
 
-                        </div>
-                            <div class="footer-form">
-                                <div class="Container-Redes">
-                                    <a href="https://twitter.com/search?q=%40AP_Andres2000&src=typd&lang=es" target="_blank"><img class="Redes" src="Imagenes/twitter.png" ></a>
-                                    <a href="https://www.instagram.com/apostolandres/" target="_blank"><img class="Redes" src="Imagenes/Instagram.png" ></a>
-                                    <a href="https://github.com/DeveAP" target="_blank"><img class="Redes" src="Imagenes/GitHub.png"></a>
-                                    <a href="https://www.linkedin.com/in/andpost" target="_blank"><img class="Redes" src="Imagenes/LinKedin.png"></a>
-                                    <a href="tel:+584127521153" target="_blank"><img class="Redes" src="Imagenes/Telefono.jpg"></a>
-                                </div>    
-                            </div>
-                        
-                </footer>
-        </div>
-    </main>
+                    </div>
+                </div>
+            </article>
+        </section>
+            <!-- Footer e informacion de la pagina -->
+        <footer id="Contacto" class="footer-style">
+            <div class="footer-title">
+                <h2>Contactame</h2>
+            </div>
+            <div class="footer-correo">
+                <a class="Correo" href="mailto:aandresaapostol@gmail.com?subject=Consulta%20de%20Pagina">Toca aqui y enviame un correo</a>
+            </div>
+            <div class="Titulo-Redes">
+                <h2>Redes Sociales y Telefono</h2>
+            </div>
+            <div class="footer-form">
+                <div class="Container-Redes">
+                    <a href="https://twitter.com/search?q=%40AP_Andres2000&src=typd&lang=es" target="_blank"><img class="Redes" src="Imagenes/twitter.png" ></a>
+                    <a href="https://www.instagram.com/apostolandres/" target="_blank"><img class="Redes" src="Imagenes/Instagram.png" ></a>
+                    <a href="https://github.com/DeveAP" target="_blank"><img class="Redes" src="Imagenes/GitHub.png"></a>
+                    <a href="https://www.linkedin.com/in/andpost" target="_blank"><img class="Redes" src="Imagenes/LinKedin.png"></a>
+                    <a href="tel:+584127521153" target="_blank"><img class="Redes" src="Imagenes/Telefono.jpg"></a>
+                </div>    
+            </div>           
+        </footer>
+    </div>
     <script src="js/index.js"></script>
-    <script src="js/main2.js"></script> <!-- Resource jQuery -->
+    <script src="js/menu.js"></script> 
 
 </body>
 </html>
