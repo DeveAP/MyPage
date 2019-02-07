@@ -81,7 +81,7 @@
         margin-bottom: 35px;
     }
     .portal .portal-text p{
-        display: inline;
+        display: inline-block;
         font-size: .4em;
         /* margin-left: 15%; */
         background-color: #23272A;
@@ -89,6 +89,10 @@
         border-radius: 5px;
         cursor: pointer;
         color:#EEF1F5;
+    }
+    .portal .portal-text p:hover{
+        background-color: #2DB2F5;
+        transform: scale(1.1);
     }
 .description{
     height: 60vh;
@@ -131,6 +135,7 @@
         padding: 0 10px;
         position: relative;
         right: 5%;
+        overflow: auto;
         /* border-radius:5px; */
     }
     .description .description-content .texto-perfil p{
@@ -158,7 +163,7 @@
         flex-direction: column;
         align-items: center;
         margin-left: 11%;
-
+        overflow: auto;
     }
     .skills .skills-content .etiquetas:nth-child(5){
         display: none;
@@ -309,59 +314,46 @@
 
 
     }
-
-@media screen and (max-width: 780px){
-
-    .description .description-content .images-perfil{
-        height: 50%;
-        background-size:100% 100%;
-
-    }
-
-    .skills .skills-content{
-
-    width:95%;
-    
-    }
-
-    .skills .skills-content .etiquetas:nth-child(1){
-        margin-left: 0px;
-    }
-
-    .portal .portal-text{
-        width:50%;
-        height:30%;
-        font-size: 3em;
-    }
-
-}
    
-
-@media screen and (max-width:425px){ 
+@media screen and (max-width:780px){ 
 
     .body-style{
         height: 451vh;
     }
     .portal .portal-text{
-        font-size: 1.8em;
+        font-size: 2.8em;
     }
 
     .description{
         height: 140vh;
     }
         .description .description-content{
-            grid-template-columns: 100%;
-            grid-template-rows: 30% 70%;
+            /* grid-template-columns: 100%;
+            grid-template-rows: 30% 70%; */
+            flex-direction: column-reverse;
+            margin-bottom: 25%;
+
         }
         .description .description-content .texto-perfil{
-            height: 80%;
-            border-radius: 10px;
+            /* height: 80%;
+            border-radius: 10px; */
+            right: 0;
+            text-align: center;
+            height: 34% !important; /* Cambiar resolucion */
         }
         .description .description-content .images-perfil{
-            margin-top:50px;
+/*             margin-top:50px;
             margin-left: 0px;
             height: 150px;
-            width: 150px; 
+            width: 150px;  */
+            margin: 0 auto;
+            width: 50%;
+            height: 50%;
+        }
+        .description .description-content .images-perfil img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
         }
 
     .skills{
