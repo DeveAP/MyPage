@@ -14,7 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
-  background-color: #485274;
+  /* background-color: #485274; */
 }
 
 a {
@@ -26,6 +26,20 @@ a {
 .body-style.Main Components 
 
 -------------------------------- */
+.header-style{
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+  .header-style.active-menu{
+      top:0px;
+      font-weight:bold;
+      background-color: #3D3D3D;
+  }
+.section-style{
+  background-color:transparent;
+  font-family: "Open Sans", sans-serif;
+}
 .cd-header {
   height: 80px;
   width: 90%;
