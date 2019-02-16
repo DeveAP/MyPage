@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+article{
+    background-color: #dfe2e2;
+}
 
 /* body Grid Tablet */
 .body-style{
@@ -10,15 +13,12 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-rows: 92% 8%;
 }
 .section-sytle{
     display: flex;
     flex-direction: column;
 }
     .portal{
-    /*background-color: #61ADFE;*/
     background-image:url("../Imagenes/Codigo.jpg");
     background-repeat:no-repeat;
     background-size:100% 100%; 
@@ -47,7 +47,6 @@
         .portal .portal-text p{
             display: inline-block;
             font-size: .4em;
-            /* margin-left: 15%; */
             background-color: #23272A;
             padding: 15px 30px;
             border-radius: 5px;
@@ -56,15 +55,15 @@
             transition-duration: 500;
         }
         .portal .portal-text p:hover{
-            background-color: #2DB2F5;
+            background-color: #1cb3c8;
             transform: scale(1.1);
         }
         .portal .portal-text p:active{
-            background-color: #2DB2F5;
+            background-color: #1cb3c8;
             transform: scale(0.9);
         }
     .about-me{
-        background-color: rgb(255, 255, 231);
+        background-color: #dfe2e2;
     }
         .about-me img{
             display: none;
@@ -73,13 +72,69 @@
             margin-bottom: 30px;
         }
     .skill{
-
+        background-color: #dfe2e2;
     }
-        .skill .heading-title h4::before{
-            content: url(../Imagenes/icon-2.svg);
+        .skill:nth-last-child(1){
+            margin-bottom: 10%;
+        }
+        .skill .heading-title img{
+            height: 50px;
+            width: 75px;
+            margin: 0 auto;
+        }
+
+    .projects-content{
+        background-color: #3c415e;
+    }
+        .content-adjust{
+            width: 100vw;
+            height: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
+        .project:nth-last-child(1){
+            margin-bottom:10%; 
+        }
+        .project{
+            height: 220px;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            margin-top: 2%;
+            background-image: url(../Imagenes/Codigo.jpg);
+            background-size: 100% 100%;
+            border-radius: 6px;
+        }
+        .project.right{
+            justify-content: flex-end;
+        }
+            .project .text-project{
+                color: white;
+                font-size: 2em;
+                margin-left: 6%;
+            }
+            .project .text-project.right{
+                margin-right: 6%;
+            }
+.contact-me{
+    background-color: #738598;
+    color: #010101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+    .spider-social{
+        width: 150px;
+    }
+    .contact-me .spider-social img{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-right: 2%;
+    }
+
+
 /* Clases generales para elementos */
 .text-prefit-movil{
     padding: 8px;
@@ -90,12 +145,12 @@
     font-size: 29px;
 }
 .marker-title{
-    border-bottom: #2DB2F5 solid 2px;
+    border-bottom: #1cb3c8 solid 2px;
     width: 150px;
     margin: 5% auto;
 }
 .marker-sub-title{
-    border-bottom: #2DB2F5 solid 2px;
+    border-bottom: #1cb3c8 solid 2px;
     width: 75px;
     margin: 2% auto;
 }
@@ -113,5 +168,7 @@
     /* margin: 10% 0; */
 }
 .heading-title{
-    margin-top:30px; 
+    margin-top:30px;
+    display: flex;
+    flex-direction: column; 
 }

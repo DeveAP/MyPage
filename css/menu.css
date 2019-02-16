@@ -34,7 +34,7 @@ a {
   .header-style.active-menu{
       top:0px;
       font-weight:bold;
-      background-color: #3D3D3D;
+      background-color: #3c415e;
   }
 .section-style{
   background-color:transparent;
@@ -70,7 +70,7 @@ a {
 }
 .cd-header.nav-is-visible.header-black{
   width: 100%;
-  background-color: #3D3D3D;
+  background-color: #3c415e;
   padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
@@ -199,7 +199,7 @@ a {
   /* this is the 3D rotating navigation */
   position: relative;
   height: 100%;
-  background-color: #343c55;
+  background-color: #738598;
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
