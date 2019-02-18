@@ -1,7 +1,33 @@
 
 //menu
 const menu = document.getElementsByClassName('header-style');
+const about = document.getElementsByClassName('about-me')[0];
+const skill = document.getElementsByClassName('content-skills')[0];
+const project = document.getElementsByClassName('content-adjust')[0];
+let count = [0,0,0]
 window.onscroll = () => {
+    console.log(window.scrollY)
+    if(window.scrollY > 51 && window.scrollY < 1304 && count[0] == 0){
+        about.animate(animation_left,{
+            duration:1000,
+            fill:'forwards'
+        });
+        count[0] = 1;
+    }
+    if(window.scrollY > 741 && window.scrollY < 2092 && count[1] == 0){
+        skill.animate(animation_top,{
+            duration: 1000,
+            fill: 'forwards'
+        })
+        count[1] = 1;
+    }
+    if(window.scrollY > 1904 && count[2] == 0){
+        project.animate(animation_right,{
+            duration: 2000,
+            fill: 'forwards'
+        })
+        count[2] = 1;
+    }      
     if (window.scrollY > 200) {
         menu[0].classList = "header-style active-menu";
     }
@@ -10,54 +36,45 @@ window.onscroll = () => {
     }
 };
 
-// // Filtros
-// const filtros = document.getElementsByClassName('fil-etiqueta');
-// const content_proyects = document.getElementsByClassName('image-project');
-// console.log(filtros,content_proyects);
-
-// for(let i = 0; i < filtros.length; i++){
-//     filtros[i].addEventListener('click', (ev) => {
-//         ev.preventDefault();
-//         let filtrar;
-//         switch (i) {
-//             case 0:
-//                 filtrar = 'image-project javascript';
-//                 break;
-//             case 1: 
-//                 filtrar = 'image-project python';
-//                 break;
-//             case 2:
-//                 filtrar = 'image-project photoshop'
-//                 break;
-//             default:
-//                 filtrar = '';
-//                 break;
-//         }
-//         if (i == 3) {
-//             all_fill(content_proyects);
-//         }
-//         else{
-//             content_fill(content_proyects,filtrar);
-//         }
+const animation_left = [
+    {
+        transform: 'translateX(300px)',
+        opacity: 0
+    },
+    {
+        transform: 'translateX(0px)',
+        opacity: 1
+    }
+];
+const animation_top = [
+    {
+        transform: 'translateY(300px)',
+        opacity: 0,
         
-//     });
-// }
-    
-// function content_fill(contents,filtrar){
-//     for(let i = 0; i < contents.length; i++){
-//         if(contents[i].classList.value != filtrar){
-//             contents[i].style.display ='none';
-//         }
-//         else{
-//             contents[i].style.display = 'inherit';
-//         }
-//     }    
-// }
-// function all_fill(contents){
-//     for (let i = 0; i < contents.length; i++) {
-//         contents[i].style.display = 'inherit';
-//     }
-// }
+    },
+    {
+        transform: 'translateY(0px)',
+        opacity: 1,
+    }
+];
+const animation_right = [
+    {
+        transform: 'translateX(-100%)',
+        opacity:1
+    },
+    {
+        transform: 'translateX(20px)',
+        opacity:1
 
- 
+    },
+    {
+        transform: 'translateX(-20px)',
+        opacity:1
 
+    },
+    {
+        transform: 'translateX(0px)',
+        opacity:1
+
+    }
+];
