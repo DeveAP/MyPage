@@ -6,7 +6,8 @@ const skill = document.getElementsByClassName('content-skills')[0];
 const project = document.getElementsByClassName('content-adjust')[0];
 const portal = document.getElementsByClassName('portal-text')[0];
 let count = [0,0,0,0]
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
+    console.log(window.scrollY);
     if(window.scrollY > 51 && window.scrollY < 1304 && count[0] == 0){ // Animacion de la biografia 
         about.animate(animation_left,{
             duration:1000,
@@ -41,7 +42,7 @@ window.onscroll = () => {
     else{
         menu[0].classList = "header-style";
     }
-};
+});
 
 const animation_left = [
     {
