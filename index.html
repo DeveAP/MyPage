@@ -23,23 +23,23 @@
         <nav class="cd-3d-nav-container">
             <ul class="cd-3d-nav">
                 <li class="cd-selected">
-                    <a href="#0">Inicio</a>
+                    <a href="#portal">Inicio</a>
                 </li>
 
                 <li>
-                    <a href="#0">Perfil</a>
+                    <a href="#about-me">Perfil</a>
                 </li>
 
                 <li>
-                    <a href="#0">Habilidades</a>
+                    <a href="#skills">Habilidades</a>
                 </li>
 
                 <li>
-                    <a href="#0">Proyectos</a>
+                    <a href="#projects">Proyectos</a>
                 </li>
 
                 <li>
-                    <a href="#0">Blog</a>
+                    <a href="#contact-me">Contactame</a>
                 </li>
             </ul> 
 
@@ -51,16 +51,17 @@
         <!-- Contenedor segmentado  -->
         <section class="section-style"> 
             <!-- Inicio -->
-            <article  class="portal">
+            <article  class="portal" id="portal">
                 <div class="portal-text">
                     <h1>Andres Apostol</h1>
                     <h3 name="subTitle">Soy </h3>
                     <p>Curriculum</p>
-                    <p>Portafolio</p>
+                    <!-- Cambio del id debido al menu -->
+                    <p id="about-me">Portafolio</p> 
                 </div>
             </article>
-            <article class="content-movil about-me">
-                <div class="heading-title">
+            <article class="content-movil about-me" >
+                <div class="heading-title" >
                     <h3 class="text-prefit-movil title-content-movil"><span>Acerca de mi</span></h3>
                     <hr class="marker-title">
                 </div>
@@ -70,13 +71,14 @@
                     <div>
                         <p class="text-prefit-movil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium. Officia rerum ipsam pariatur inventore, accusamus sint aspernatur tenetur eaque molestias dolores magni error aperiam quae facilis maxime illum omnis?</p>
                         <p class="text-prefit-movil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimus exercitationem deserunt placeat blanditiis. Libero laboriosam, deserunt quae autem sunt eum inventore, repellendus optio sit aut earum facilis rerum ullam?</p>
-                        <p class="text-prefit-movil">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, iste voluptates! Eum dignissimos aperiam eligendi laboriosam atque incidunt quas, delectus quam perspiciatis, blanditiis repellendus quis repellat eius in ratione. Rem!</p>
+                        <!-- Cambio del id debido al menu -->                    
+                        <p class="text-prefit-movil" id="skills">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, iste voluptates! Eum dignissimos aperiam eligendi laboriosam atque incidunt quas, delectus quam perspiciatis, blanditiis repellendus quis repellat eius in ratione. Rem!</p>
                     </div>
                 </div>
                 
                 
             </article>
-            <article class="content-movil skills-content">
+            <article class="content-movil skills-content" >
                 <div class="heading-title">
                     <h3 class="text-prefit-movil title-content-movil"><span>Habilidades</span></h3>
                     <hr class="marker-title">
@@ -112,11 +114,12 @@
                                 <h4 class="text-prefit-movil sub-title-content-movil">Php</h4>
                                 <hr class="marker-sub-title">
                             </div>
-                            <p class="text-prefit-movil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium. Officia rerum ipsam pariatur inventore, accusamus sint aspernatur tenetur eaque molestias dolores magni error aperiam quae facilis maxime illum omnis?</p>
+                            <!-- Cambio del id debido al menu -->
+                            <p class="text-prefit-movil" id="projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium. Officia rerum ipsam pariatur inventore, accusamus sint aspernatur tenetur eaque molestias dolores magni error aperiam quae facilis maxime illum omnis?</p>
                         </div>
                 </div>
             </article>
-            <article class="content-movil projects-content">
+            <article class="content-movil projects-content" >
                 <div class="heading-title">
                     <h3 class="text-prefit-movil title-content-movil"><span style="color:white">Proyectos</span></h3>
                     <hr class="marker-title">
@@ -139,12 +142,13 @@
             </article>           
         </section>
         <footer class="contact-me">
-            <h3 class="text-prefit-movil title-content-movil"><span>Contactame</span></h3>
+            <!-- Cambio del id debido al menu -->
+            <h3 class="text-prefit-movil title-content-movil" id="contact-me"><span>Contactame</span></h3>
             <div class="spider-social">
                 <a href="https://www.instagram.com/apostolandres/"><img src="Imagenes/instagram-brands.svg" alt="Instagram"></a>
                 <a href="https://github.com/DeveAP"><img src="Imagenes/github-alt-brands.svg" alt="GitHub"></a>
                 <a href="https://twitter.com/AP_Andres2000"><img src="Imagenes/twitter-brands.svg" alt="Twitter"></a>
-                <a href="mailito:aandresaapostol@gmail.com"><img src="Imagenes/envelope-solid.svg" alt="Email"></a>
+                <a href="mailto:andresandpost@gmail.com"><img src="Imagenes/envelope-solid.svg" alt="Email"></a>
             </div>
         </footer>
     </div>
