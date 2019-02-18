@@ -7,7 +7,7 @@ const project = document.getElementsByClassName('content-adjust')[0];
 const portal = document.getElementsByClassName('portal-text')[0];
 let count = [0,0,0,0]
 window.addEventListener('scroll',animated_move);
-window.addEventListener('touchmove',animated_move);
+document.addEventListener('touchmove',animated_move);
 
 
 
