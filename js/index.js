@@ -20,11 +20,11 @@ function animate_IOS() {
         count[0] = 1;
 
     }
-    if(window.scrollY > 541 && window.scrollY < 2092 && count[1] == 0){ // Animacion de habilidades
+    if(window.scrollY > 441 && window.scrollY < 1592 && count[1] == 0){ // Animacion de habilidades
         skill.style.animationPlayState = 'running'
         count[1] = 1;
     }
-    if(window.scrollY > 1904 && count[2] == 0){ // Animacion de proyectos
+    if(window.scrollY > 1704 && count[2] == 0){ // Animacion de proyectos
         project.style.animationPlayState = 'running'
         count[2] = 1;
     }
