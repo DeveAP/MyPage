@@ -16,14 +16,13 @@ article{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
     background-color: #dfe2e2;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .section-sytle{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden !important;
 }
     .portal{
     background-image:url("../Imagenes/Codigo.jpg");
@@ -306,10 +305,13 @@ article{
 }
 @keyframes animation_left{
     0%{
+        display: none;
+
         transform: translateX(300px);
         opacity: 0;
     }
     100%{
+        display: inherit;
         transform: translateX(0px);
         opacity: 1;
     }
