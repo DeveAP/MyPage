@@ -6,13 +6,31 @@ const skill = document.getElementsByClassName('content-skills')[0];
 const project = document.getElementsByClassName('content-adjust')[0];
 const portal = document.getElementsByClassName('portal-text')[0];
 let count = [0,0,0,0]
-document.addEventListener('scroll',animated_move);
-document.addEventListener('touchmove',animated_move);
+document.addEventListener('scroll',animate_other,false);
+document.addEventListener('touchmove',animate_IOS,false);
+// window.onscroll = ScrollStart;
+animate_IOS()
+function animate_IOS() {
+    if(window.scrollY > -1 && window.scrollY < 51 && count[3] == 0){ // Animacion de portal 
+        portal.style.animationPlayState = 'running'
+        count[3] = 1;
+    } 
+    if(window.scrollY > 51 && window.scrollY < 1304 && count[0] == 0){ // Animacion de habilidades
+        about.style.animationPlayState = 'running'
+        count[0] = 1;
 
-
-
-
-function animated_move() {
+    }
+    if(window.scrollY > 741 && window.scrollY < 2092 && count[1] == 0){ // Animacion de habilidades
+        skill.style.animationPlayState = 'running'
+        count[1] = 1;
+    }
+    if(window.scrollY > 1904 && count[2] == 0){ // Animacion de proyectos
+        project.style.animationPlayState = 'running'
+        count[2] = 1;
+    }
+}
+function animate_other() {
+    // alert(`Esta es la posicion ${window.scrollY}`)
     if(window.scrollY > 51 && window.scrollY < 1304 && count[0] == 0){ // Animacion de la biografia 
         about.animate(animation_left,{
             duration:1000,
