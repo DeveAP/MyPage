@@ -20,7 +20,7 @@ function animate_IOS() {
         count[0] = 1;
 
     }
-    if(window.scrollY > 741 && window.scrollY < 2092 && count[1] == 0){ // Animacion de habilidades
+    if(window.scrollY > 541 && window.scrollY < 2092 && count[1] == 0){ // Animacion de habilidades
         skill.style.animationPlayState = 'running'
         count[1] = 1;
     }
